@@ -1,0 +1,195 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.Body1 .content{
+    display: flex;
+    padding:10px 3%;
+}
+.Body1 .Categorii{
+    width: 19%;
+    /* background-color: red; */
+    position: sticky;
+    height: fit-content;
+    /* top:14vh; */
+    top:0;
+    background-color: white;
+}
+.Body1 .Categorii *{
+    cursor: pointer;
+    color:unset;
+    text-decoration: none;
+    display:block;
+    margin:10px 0;
+    text-transform: capitalize;
+}
+.Body1 .Categorii .categoriiMulte{
+    margin-left: 10px;
+}
+.Body1 .Categorii .active{
+    font-weight: bold;
+}
+.Body1 .Space2{
+    width: 100%;
+    justify-content: center;
+    /* padding: 0 3%; */
+    /* background-color: red; */
+}
+.Body1 .Space2 .ItemsContainer, .Body1 .Space2 .More, .Body1 .Space2 .UpMoreNO, .Body1 .Space2 .subCatMore{
+    padding: 0 3%;
+}
+.Body1 .Space2 .UpMore{
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0 10px;
+    display:flex;
+    margin:0 3%;
+    /* position: sticky; */
+    z-index: 2;
+    top:0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+.Body1 .Space2 .UpMore .location{
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+    font-weight: bold;
+}
+.Body1 .Space2 .UpMore .location .buttonBackCat{
+    margin:5px;
+    background-color: unset;
+    border:none;
+    /* opacity: 1; */
+}
+.Body1 .Space2 .UpMore *{
+    margin-right: 10px;
+    text-decoration: none;
+    color:unset;
+    text-transform: capitalize;
+}
+.Body1 .Space2 .UpMore .FilterButton{
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+    align-items: baseline;
+    cursor:pointer;
+}
+.Body1 .Space2 .UpMore .FilterButton .sortOptions{
+    width:max-content;
+    top:100%;
+    background-color:white;
+    position: absolute;
+    z-index: 1;
+    margin:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Body1 .Space2 .UpMore .FilterButton .sortOptions .sort_pickedActive{
+    background-color: black;
+    color:white;
+}
+.Body1 .Space2 .UpMore .FilterButton .sortOptions .sort_picked{
+    /* background-color: black; */
+    /* color:white; */
+    color: unset;
+}
+.Body1 .Space2 .subCatMore{
+    margin:10px 0;
+    display: none;
+    position: relative;
+    align-items: baseline;
+    /* flex-wrap:wrap; */
+}
+.Body1 .Space2 .subCatMore .subCatMoreLink{
+    color:unset;
+    text-decoration: none;
+    margin:10px;
+    border:1px solid rgba(165, 165, 165,.3);
+    padding:0 10px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.Body1 .Space2 .subCatMore .active_subCatMoreLink{
+    background-color: rgba(165, 165, 165,.3);
+    border: none;
+    text-transform: capitalize;
+}
+.Body1 .Space2 .More{
+    margin:10px 0 20px 0;
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+    align-items: baseline;
+    /* background-color: red; */
+}
+.Body1 .Space2 .More .BigFilter{
+    margin:10px;
+    border:1px solid rgba(165, 165, 165,.3);
+    padding:0 10px;
+    /* background-color: red; */
+    text-decoration: none;
+    color:unset;
+    cursor: pointer;
+}
+.Body1 .Space2 .More .Onclick{
+    display: none;
+    position: absolute;
+    /* right: 0; */
+    /* center filters */
+    /* top: 50px; */
+    left: 50%;
+    transform: translate(-50%);
+    /* end center filters */
+    margin-left: 10px;
+    z-index: 1;
+}
+.Body1 .Space2 .More .activeCat{
+    background-color: black;
+    color:white;
+}
+.Body1 .Space2 .More .active{
+    display: initial;
+}
+
+@media (max-width:1200px){
+    .Items{
+        grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+    }
+}
+
+@media (max-width:680px){
+    .Items{
+        grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) );
+    }
+}
+@media (max-width:900px){
+    .Body1 .Categorii{
+        display:none;
+    }
+    .Body1 .Space2 .subCatMore{
+        display: flex;
+        overflow-x: auto;
+    }
+}
+@media (max-width:550px){
+    .Body1{
+        padding: 0;
+    }
+    .Body1 .Space2 .UpMore{
+        /* top:90px; */
+        margin:0;
+    }
+    /* .Body1 .Categorii{
+        display:none;
+    }
+    .Body1 .Space2 .subCatMore{
+        display: flex;
+    } */
+    .Items{
+        grid-template-columns: repeat( auto-fit, minmax(170px, 1fr) );
+    }
+}
+
+@media (max-width:400px){
+    .Items{
+        grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+    }
+}

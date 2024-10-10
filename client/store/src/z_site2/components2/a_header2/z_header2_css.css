@@ -1,0 +1,93 @@
+.HeaderPage2{
+    background-color: black;
+    color:white;
+    padding:10px 0;
+    position: sticky;
+    top:0%;
+    width: 100%;
+    z-index: 2;
+}
+.HeaderPage2 .Row1{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.HeaderPage2 .Row1 div{
+    margin:0 10px;
+    align-items: center;
+    /* width: 100%; */
+}
+.HeaderPage2 .Header2{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;   
+    /* flex-grow: 1; */
+    width: 25%;
+}
+.HeaderPage2 .Header2 p{
+    margin: 10px;
+}
+.HeaderPage2 .Logo{
+    /* background-color: purple; */
+    /* border-radius: 50px; */
+    display: flex;
+    justify-content: center;
+    /* flex-grow: 1; */
+}
+.HeaderPage2 .filtre{
+    /* background-color:gray; */
+    display: flex;
+    justify-content: flex-start; 
+    width: 25%;
+ }
+.HeaderPage2 .filtre p{
+     margin:10px
+ }
+.HeaderPage2 .Row2{
+    display: flex;
+    justify-content: space-between;
+ }
+.HeaderPage2 .Row2 .Search{
+    font-size: 80%;
+    border-radius: 50px;
+    margin:0 10px;
+    border:solid 2px gray;
+    padding:0 10px;
+    width: 100%;
+ }
+.HeaderPage2 .Row2 .CategoriiH{
+     display: flex;
+ }
+.HeaderPage2 .Row2 .CategoriiH p{
+     margin:10px;
+ }
+
+@media (max-width:800px){
+    .HeaderPage2 .Header2, .Header .filtre{
+        width: auto;
+    }
+    /* .Header2{
+        background-color: green;
+    } */
+}
+
+@media (max-width:550px){
+    .HeaderPage2 .Row1 div{
+        margin:0;
+    }
+    .HeaderPage2 .Header2, .Header .filtre{
+        width: auto;
+    }
+    .HeaderPage2 p{
+        font-size: 55%;
+    }
+    .HeaderPage2 .Row2 .CategoriiH{
+        display: none;
+    }
+    /* .HeaderPage2{
+       
+    } */
+    
+}

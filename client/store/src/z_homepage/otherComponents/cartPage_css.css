@@ -1,0 +1,38 @@
+.cartPage{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cartPage .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin:5vh 0;
+    font-size: 1.5em;
+}
+.cartPage .topT{
+  display: flex;
+}
+.cartPage .checkandclear{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.cartPage .clearCartBtn{
+  background-color: #ff3333;
+  width: max-content;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+}
+.cartPage .cartItem{
+  align-items: center;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.cartPage .emptyCart{
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}

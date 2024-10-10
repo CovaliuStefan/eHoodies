@@ -1,0 +1,92 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.Slider_products{
+    /* margin:50px 1vw 50px 1vw; */
+    /* margin:0 10vw; */
+    margin-top:10vh;
+    /* margin-bottom:10vh; */
+    position: relative;
+    font-family: Arial;
+    font-size: 15px;
+}
+.Slider_products .Slider-title-div{
+    /* margin:50px 1vw 0 0; */
+    margin:0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.Slider_products .Slider-title-div .Slider_title{
+    font-size: 30px;
+    font-family: Verdana;
+    margin:10px 10px 0 0;
+}
+.Slider_products .Slider-title-div .buttons *{
+    margin:5px;
+    background-color: unset;
+    border:none;
+    opacity: 1;
+}
+.Slider_products .hidden{
+    overflow: scroll;
+    margin: 0 10vw;
+}
+.Slider_products .hidden::-webkit-scrollbar{
+    display: none;
+}
+.Slider_products .Slides{
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+/* .Slider_products .Slides::-webkit-scrollbar{
+    display: none;
+} */
+.Slider_products .buttonsSkip{
+    margin: 0 10vw;
+}
+.Slider_products .next{
+    position: absolute;
+    top:50%;
+    right: 5px;
+    transform: translate(0,-50%);
+}
+.Slider_products .prev{
+    position: absolute;
+    top:50%;
+    left:5px;
+    transform: translate(0,-50%);
+}
+.Slider_products .buttonSlide{
+    border:1px solid gray;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+}
+.Slider_products .buttonSlide:hover{
+    opacity: 1;
+}
+@media (max-width:770px){
+    .Slider_products .Slides{
+        /* overflow-x: scroll; */
+        scroll-snap-type: x mandatory;
+    }
+    .Slider_products .Slides::-webkit-scrollbar {
+        display: none;
+    }
+    .Slider_products .buttonsSkip{
+        display: none;
+    }
+    .Slider_products .hidden{
+        overflow: scroll;
+        /* margin: 0; */
+    }
+}
+@media (max-width:500px){
+    .Slider_products .hidden{
+        margin: 0;
+    }
+}
+

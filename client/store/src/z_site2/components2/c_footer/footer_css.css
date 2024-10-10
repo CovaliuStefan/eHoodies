@@ -1,0 +1,7 @@
+.Footer{
+    background-color: grey;
+    height: 1500px;
+}
+.Footer *{
+    margin:0;
+}
